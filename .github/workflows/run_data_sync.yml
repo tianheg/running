@@ -8,6 +8,7 @@ on:
     branches:
       - main
     paths:
+      - .github/workflows/run_data_sync.yml
       - scripts/nike_sync.py
       - scripts/nike_to_strava_sync.py
       - scripts/strava_sync.py
