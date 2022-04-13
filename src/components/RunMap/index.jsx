@@ -1,3 +1,4 @@
+import mapboxgl from 'mapbox-gl';
 import MapboxLanguage from '@mapbox/mapbox-gl-language';
 import React from 'react';
 import ReactMapGL, { Layer, Source } from 'react-map-gl';
@@ -31,7 +32,7 @@ const RunMap = ({
     if (map && IS_CHINESE) {
       map.addControl(
         new MapboxLanguage({
-          defaultLanguage: 'zh',
+          defaultLanguage: 'zh-Hans',
         })
       );
       map.setLayoutProperty('country-label-lg', 'text-field', [
