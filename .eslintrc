@@ -3,7 +3,7 @@
 
   "extends": [
     "airbnb",
-    "plugin:prettier/recommended",
+    "plugin:prettier/recommended"
   ],
 
   "plugins": [
@@ -32,14 +32,14 @@
 
     "react/jsx-props-no-spreading": 0, // TODO: re-evaluate
 
-    "react/no-deprecated": 1, // TODO: update to UNSAFE_componentWillReceiveProps
+    "react/no-deprecated": 1 // TODO: update to UNSAFE_componentWillReceiveProps
   },
 
   "overrides": [
     {
       "files": "test/**/*",
       "env": {
-        "mocha": true,
+        "mocha": true
       },
       "extends": "airbnb",
       "rules": {
@@ -49,9 +49,9 @@
         //}],
         "indent": [2, 2, {
           "MemberExpression": "off"
-        }],
-      },
-    },
+        }]
+      }
+    }
   ],
 
   "settings": {
