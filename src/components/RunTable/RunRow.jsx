@@ -1,6 +1,6 @@
 import React from 'react';
 import { MAIN_COLOR } from 'src/utils/const';
-import { formatPace, titleForRun, formatRunTime  } from 'src/utils/utils';
+import { formatPace, titleForRun, formatRunTime } from 'src/utils/utils';
 import styles from './style.module.scss';
 
 const RunRow = ({ runs, run, locateActivity, runIndex, setRunIndex }) => {
@@ -11,7 +11,7 @@ const RunRow = ({ runs, run, locateActivity, runIndex, setRunIndex }) => {
 
   const heartRate = run.average_heartrate;
 
-  const runTime = formatRunTime(distance,pace);
+  const runTime = formatRunTime(distance, pace);
 
   // change click color
   const handleClick = (e, runs, run) => {
@@ -37,7 +37,7 @@ const RunRow = ({ runs, run, locateActivity, runIndex, setRunIndex }) => {
       <td>{titleForRun(run)}</td>
       <td>{distance}</td>
       {pace && <td>{paceParts}</td>}
-      <td>{heartRate && heartRate.toFixed(0)}</td>
+      {heartRate && <td> {heartRate.toFixed(0)}</td>}
       <td>{runTime}</td>
       <td className={styles.runDate}>{run.start_date_local}</td>
     </tr>
