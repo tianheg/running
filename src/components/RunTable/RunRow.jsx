@@ -15,13 +15,12 @@ const RunRow = ({ runs, run, locateActivity, runIndex, setRunIndex }) => {
 
   const runTime = formatRunTime(distance, pace);
 
-  const elements = document.getElementsByClassName(styles.runRow);
-
   // change click color
   const handleClick = (e, runs, run) => {
     const elementIndex = runs.indexOf(run);
     e.target.parentElement.style.color = 'red';
 
+    const elements = document.getElementsByClassName(styles.runRow);
     if (runIndex !== -1 && elementIndex !== runIndex) {
       elements[runIndex].style.color = MAIN_COLOR;
     }
