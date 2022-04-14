@@ -2298,12 +2298,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mapbox/mapbox-gl-language@npm:0.10.1":
-  version: 0.10.1
-  resolution: "@mapbox/mapbox-gl-language@npm:0.10.1"
+"@mapbox/mapbox-gl-language@npm:1.0.0":
+  version: 1.0.0
+  resolution: "@mapbox/mapbox-gl-language@npm:1.0.0"
   peerDependencies:
-    mapbox-gl: ">=0.29.0 <2.0.0"
-  checksum: 806b5c973a829e0474b94d4a8a0e3e177c6e8e4d569b7cbe981b88145388fcbf7deacc0b34293dae8601ed6645e9131a930f6a55c208af023ead4bb7427b6bfb
+    mapbox-gl: ">=0.29.0"
+  checksum: 3f1c5e65497ebef4b6e2922b1133ab834bd6703e592bef9a726c297c314b6f085015e9a4cd5668e21c25f6ea878e6990539a3bdbbeb3ef12b826237a4e9e360b
   languageName: node
   linkType: hard
 
@@ -15041,7 +15041,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "running@workspace:."
   dependencies:
-    "@mapbox/mapbox-gl-language": 0.10.1
+    "@mapbox/mapbox-gl-language": 1.0.0
     "@mapbox/polyline": 1.1.1
     "@visx/axis": 2.6.0
     "@visx/group": 2.1.0
