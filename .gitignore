@@ -21,3 +21,11 @@ config.yaml
 
 # python
 venv/
+
+# Yarn berry
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
