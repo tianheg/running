@@ -4,7 +4,7 @@
   "private": true,
   "engineStrict": true,
   "engines": {
-    "node": "14.x"
+    "node": "16.x"
   },
   "scripts": {
     "data:clean": "rm scripts/data.db GPX_OUT/* activities/* src/static/activities.json",
