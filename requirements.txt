@@ -1,8 +1,8 @@
 httpx==0.15.4
 gpxpy==1.4.2
 stravalib
-appdirs>=1.4.0
-svgwrite>=1.1.9
+appdirs==1.4.4
+svgwrite==1.4.2
 colour
 s2sphere
 arrow
