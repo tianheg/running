@@ -1,4 +1,5 @@
 import { useStaticQuery, graphql } from 'gatsby';
+
 import { locationForRun, titleForRun } from 'src/utils/utils';
 
 const useActivities = () => {

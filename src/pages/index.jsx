@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import ParentSize from '@visx/responsive/lib/components/ParentSize';
 import Layout from 'src/components/Layout';
 import LocationStat from 'src/components/LocationStat';
 import RunMap from 'src/components/RunMap';
 import RunTable from 'src/components/RunTable';
+import GroupBar from 'src/components/GroupBar';
 import SVGStat from 'src/components/SVGStat';
 import YearsStat from 'src/components/YearsStat';
 import useActivities from 'src/hooks/useActivities';
@@ -81,7 +83,7 @@ const Index = () => {
   useEffect(() => {
     setViewport({
       width: '100%',
-      height: 500,
+      height: 400,
       ...bounds,
     });
   }, [geoData]);
@@ -190,10 +192,18 @@ const Index = () => {
             geoData={geoData}
             setViewport={setViewport}
             changeYear={changeYear}
-            thisYear={year}
+            thisYear={thisYear}
           />
+
           {year === 'Total' ? (
-            <SVGStat />
+            <>
+              <ParentSize style={{ marginTop: '50px' }}>
+                {({ width }) => (
+                  <GroupBar width={width} height={400} runs={runs} />
+                )}
+              </ParentSize>
+              <SVGStat />
+            </>
           ) : (
             <RunTable
               runs={runs}

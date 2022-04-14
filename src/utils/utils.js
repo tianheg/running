@@ -27,7 +27,7 @@ const formatPace = (d) => {
   return `${minutes}:${seconds.toFixed(0).toString().padStart(2, '0')}`;
 };
 
-const formatRunTime = (distance,pace) => {
+const formatRunTime = (distance, pace) => {
   if (Number.isNaN(distance) || Number.isNaN(pace)) {
     return '0min';
   }
@@ -92,7 +92,9 @@ const pathForRun = (run) => {
     const c = mapboxPolyline.decode(run.summary_polyline);
     // reverse lat long for mapbox
     c.forEach((arr) => {
-      [arr[0], arr[1]] = !NEED_FIX_MAP ? [arr[1], arr[0]] : gcoord.transform([arr[1], arr[0]], gcoord.GCJ02, gcoord.WGS84);
+      [arr[0], arr[1]] = !NEED_FIX_MAP
+        ? [arr[1], arr[0]]
+        : gcoord.transform([arr[1], arr[0]], gcoord.GCJ02, gcoord.WGS84);
     });
     return c;
   } catch (err) {

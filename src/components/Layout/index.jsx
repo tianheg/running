@@ -1,8 +1,11 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import PropTypes from 'prop-types';
+
 import Header from 'src/components/Header';
+
 import useSiteMetadata from 'src/hooks/useSiteMetadata';
+
 import 'src/styles/index.scss';
 import styles from './style.module.scss';
 
@@ -10,7 +13,7 @@ const Layout = ({ children }) => {
   const { siteTitle, description } = useSiteMetadata();
 
   return (
-    <div>
+    <>
       <Helmet bodyAttributes={{ class: styles.body }}>
         <html lang="en" />
         <title>{siteTitle}</title>
@@ -23,7 +26,7 @@ const Layout = ({ children }) => {
       </Helmet>
       <Header title={siteTitle} />
       <div className="pa3 pa5-l">{children}</div>
-    </div>
+    </>
   );
 };
 

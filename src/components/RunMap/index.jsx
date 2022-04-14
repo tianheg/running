@@ -1,8 +1,12 @@
-import mapboxgl from 'mapbox-gl';
-import MapboxLanguage from '@mapbox/mapbox-gl-language';
 import React from 'react';
 import ReactMapGL, { Layer, Source } from 'react-map-gl';
+import MapboxLanguage from '@mapbox/mapbox-gl-language';
+
+import RunMarker from './RunMaker';
+import RunMapButtons from './RunMapButtons';
+
 import useActivities from 'src/hooks/useActivities';
+
 import {
   IS_CHINESE,
   MAIN_COLOR,
@@ -12,8 +16,7 @@ import {
   LINE_OPACITY,
 } from 'src/utils/const';
 import { geoJsonForMap } from 'src/utils/utils';
-import RunMarker from './RunMaker';
-import RunMapButtons from './RunMapButtons';
+
 import styles from './style.module.scss';
 
 const RunMap = ({
@@ -32,7 +35,7 @@ const RunMap = ({
     if (map && IS_CHINESE) {
       map.addControl(
         new MapboxLanguage({
-          defaultLanguage: 'zh-Hans',
+          defaultLanguage: 'zh',
         })
       );
       map.setLayoutProperty('country-label-lg', 'text-field', [

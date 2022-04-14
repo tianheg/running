@@ -11,13 +11,13 @@ const MUNICIPALITY_CITIES_ARR = [
 ];
 
 // styling: set to `true` if you want dash-line route
-const USE_DASH_LINE = true;
+const USE_DASH_LINE = false;
 // styling: route line opacity: [0, 1]
 const LINE_OPACITY = 0.4;
 
 // IF you outside China please make sure IS_CHINESE = false
 const IS_CHINESE = true;
-const USE_ANIMATION_FOR_GRID = false;
+const USE_ANIMATION_FOR_GRID = true;
 const CHINESE_INFO_MESSAGE = (yearLength, year) => {
   const yearStr = year === 'Total' ? '所有' : ` ${year} `;
   return `我用 App 记录自己跑步 ${yearLength} 年了，下面列表展示的是${yearStr}的数据`;
@@ -66,6 +66,11 @@ const nike = 'rgb(224,237,94)'; // if you want change the main color change here
 
 // If your map has an offset please change this line
 // issues #92 and #198
-export const NEED_FIX_MAP = false;
+export const NEED_FIX_MAP = true;
 export const MAIN_COLOR = nike;
 export const PROVINCE_FILL_COLOR = '#47b8e0';
+export const yellow = 'rgba(255, 255, 0, 1)';
+export const lighterYellow = 'rgba(255, 255, 0, 0.6)';
+export const blue = 'rgba(51,201,235, 1)';
+export const lighterBlue = 'rgba(51,201,235, 0.7)';
+export const lighterGreen = 'rgba(224,237,94, 0.7)';

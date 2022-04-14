@@ -1,6 +1,9 @@
 import React from 'react';
+
 import YearStat from 'src/components/YearStat';
+
 import useActivities from 'src/hooks/useActivities';
+
 import { INFO_MESSAGE } from 'src/utils/const';
 
 const YearsStat = ({ year, onClick }) => {

@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+
 import useActivities from 'src/hooks/useActivities';
+
 import { MAIN_COLOR } from 'src/utils/const';
+
 import styles from './style.module.scss';
 
-const RunMapButtons = ({ changeYear, thisYear, mapButtonYear }) => {
+const RunMapButtons = ({ changeYear, thisYear }) => {
   const elements = document.getElementsByClassName(styles.button);
   const { years } = useActivities();
   const yearsButtons = years.slice();

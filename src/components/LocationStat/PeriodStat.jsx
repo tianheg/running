@@ -1,5 +1,7 @@
 import React from 'react';
+
 import Stat from 'src/components/Stat';
+
 import useActivities from 'src/hooks/useActivities';
 
 const PeriodStat = ({ onClick }) => {

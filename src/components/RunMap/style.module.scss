@@ -9,6 +9,7 @@
 }
 
 .buttons {
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -16,17 +17,17 @@
   display: inline-block;
   position: relative;
   cursor: pointer;
-  width: 9%;
-  padding: 1.3rem;
+  width: 10%;
+  padding: 1rem;
   margin-top: .1rem;
-  font-size: 1rem;
+  font-size: .9rem;
   text-align: center;
   color: white;
   font-family: $global-font-family;
 }
 
 .runTitle {
-  height: 29px;
+  height: 26px;
   width: 710px;
   position: absolute;
   bottom: 0px;
