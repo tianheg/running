@@ -1,6 +1,22 @@
 {
   "name": "running",
   "version": "1.0.0",
+  "private": true,
+  "engineStrict": true,
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "data:clean": "rm scripts/data.db GPX_OUT/* activities/* src/static/activities.json",
+    "data:download:garmin": "python3 scripts/garmin_sync.py",
+    "data:analysis": "python3 scripts/gen_svg.py --from-db --type github --output assets/github.svg",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "serve": "gatsby serve",
+    "lint": "eslint --ext .js,.jsx src --fix",
+    "check": "npx prettier --write *.{js,jsx,scss,json,md,yaml}",
+    "ci": "yarn run check && yarn run build && yarn run test"
+  },
   "dependencies": {
     "@mapbox/mapbox-gl-language": "^0.10.1",
     "@mapbox/polyline": "^1.1.1",
@@ -40,22 +56,6 @@
     "tachyons": "^4.12.0",
     "tachyons-sass": "^4.9.5",
     "webpack": "^5.11.0"
-  },
-  "private": true,
-  "scripts": {
-    "data:clean": "rm scripts/data.db GPX_OUT/* activities/* src/static/activities.json",
-    "data:download:garmin": "python3 scripts/garmin_sync.py",
-    "data:analysis": "python3 scripts/gen_svg.py --from-db --type github --output assets/github.svg",
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "serve": "gatsby serve",
-    "lint": "eslint --ext .js,.jsx src --fix",
-    "check": "npx prettier --write *.{js,jsx,scss,json,md,yaml}",
-    "ci": "yarn run check && yarn run build && yarn run test"
-  },
-  "engineStrict": true,
-  "engines": {
-    "node": ">=16.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
