@@ -4,7 +4,7 @@ module.exports = {
     siteTitle: 'Running',
     siteUrl: 'https://run.tianheg.xyz',
     logo: 'https://avatars.githubusercontent.com/u/52186032?v=4',
-    description: 'Running Page',
+    description: 'tianheg Running Page',
     navLinks: [
       {
         name: 'Blog',
@@ -12,7 +12,7 @@ module.exports = {
       },
       {
         name: 'About',
-        url: 'https://github.com/tianheg/running_page',
+        url: 'https://github.com/tianheg/running',
       },
     ],
   },
@@ -71,18 +71,6 @@ module.exports = {
         rule: {
           include: /assets/,
         },
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
-        start_url: '/',
-        background_color: '#e1e1e1',
-        theme_color: '#e1e1e1',
-        display: 'minimal-ui',
-        icon: 'src/images/favicon.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-transformer-sharp',
