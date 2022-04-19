@@ -52,7 +52,7 @@
     "react-dom": "18.0.0",
     "react-helmet": "6.1.0",
     "react-map-gl": "5.3.19",
-    "sass": "1.50.0",
+    "sass": "1.50.1",
     "sass-mq": "6.0.0",
     "styled-components": "5.3.5",
     "tachyons": "4.12.0",
