@@ -22,9 +22,17 @@ const RunTable = ({
     sortFuncInfo === 'Pace'
       ? a.average_speed - b.average_speed
       : b.average_speed - a.average_speed;
+  const sortBPMFunc = (a, b) =>
+    sortFuncInfo === 'BPM'
+      ? a.average_heartrate - b.average_heartrate
+      : b.average_heartrate - a.average_heartrate;
   const sortRunTimeFunc = (a, b) => {
-    if (Number.isNaN(a.distance) || Number.isNaN(b.distance)
-      || Number.isNaN(a.average_speed) || Number.isNaN(b.average_speed)) {
+    if (
+      Number.isNaN(a.distance) ||
+      Number.isNaN(b.distance) ||
+      Number.isNaN(a.average_speed) ||
+      Number.isNaN(b.average_speed)
+    ) {
       return 0;
     }
     const aDistance = (a.distance / 1000.0).toFixed(1);
@@ -42,6 +50,7 @@ const RunTable = ({
   const sortFuncMap = new Map([
     ['KM', sortKMFunc],
     ['Pace', sortPaceFunc],
+    ['BPM', sortBPMFunc],
     ['Time', sortRunTimeFunc],
     ['Date', sortDateFuncClick],
   ]);
