@@ -2378,7 +2378,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@math.gl/web-mercator@npm:^3.5.5, @math.gl/web-mercator@npm:^3.5.7":
+"@math.gl/web-mercator@npm:3.5.7, @math.gl/web-mercator@npm:^3.5.5":
   version: 3.5.7
   resolution: "@math.gl/web-mercator@npm:3.5.7"
   dependencies:
@@ -15088,7 +15088,7 @@ __metadata:
   dependencies:
     "@mapbox/mapbox-gl-language": 1.0.0
     "@mapbox/polyline": 1.1.1
-    "@math.gl/web-mercator": ^3.5.7
+    "@math.gl/web-mercator": 3.5.7
     "@visx/axis": 2.6.0
     "@visx/group": 2.1.0
     "@visx/legend": 2.2.2
