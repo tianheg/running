@@ -48,8 +48,8 @@
     "gcoord": "0.3.2",
     "mapbox-gl": "2.8.2",
     "prop-types": "15.8.1",
-    "react": "18.0.0",
-    "react-dom": "18.0.0",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
     "react-helmet": "6.1.0",
     "react-map-gl": "5.3.19",
     "sass": "1.51.0",
@@ -68,7 +68,7 @@
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-react": "7.29.4",
-    "eslint-plugin-react-hooks": "4.4.0",
+    "eslint-plugin-react-hooks": "4.5.0",
     "prettier": "2.6.2"
   },
   "packageManager": "yarn@3.2.0"
