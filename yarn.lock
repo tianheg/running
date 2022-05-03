@@ -3800,9 +3800,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@visx/responsive@npm:2.8.0":
-  version: 2.8.0
-  resolution: "@visx/responsive@npm:2.8.0"
+"@visx/responsive@npm:2.10.0":
+  version: 2.10.0
+  resolution: "@visx/responsive@npm:2.10.0"
   dependencies:
     "@juggle/resize-observer": ^3.3.1
     "@types/lodash": ^4.14.172
@@ -3810,8 +3810,8 @@ __metadata:
     lodash: ^4.17.21
     prop-types: ^15.6.1
   peerDependencies:
-    react: ^16.0.0-0 || ^17.0.0-0
-  checksum: 0caa6212e76b28140d71a506e4952381a6f0e456a604dd263be263dde7d34c3f6dd3f215e01c7049213f7b2480ff2c8030913e95bf345e86fc3297e176630f67
+    react: ^16.0.0-0 || ^17.0.0-0 || ^18.0.0-0
+  checksum: 05271fe02c7fbf76ccb727694ebb418c79e9cce597804086d2a4523360f58af522ffb9a0f58acaa35c46c72fec569ff92833ed22671fdea09a7666f1fed80184
   languageName: node
   linkType: hard
 
@@ -15127,7 +15127,7 @@ __metadata:
     "@visx/axis": 2.6.0
     "@visx/group": 2.1.0
     "@visx/legend": 2.2.2
-    "@visx/responsive": 2.8.0
+    "@visx/responsive": 2.10.0
     "@visx/scale": 2.2.2
     "@visx/shape": 2.4.0
     babel-eslint: 10.1.0
