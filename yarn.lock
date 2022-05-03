@@ -3778,18 +3778,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@visx/legend@npm:2.2.2":
-  version: 2.2.2
-  resolution: "@visx/legend@npm:2.2.2"
+"@visx/group@npm:2.10.0":
+  version: 2.10.0
+  resolution: "@visx/group@npm:2.10.0"
   dependencies:
     "@types/react": "*"
-    "@visx/group": 2.1.0
+    classnames: ^2.3.1
+    prop-types: ^15.6.2
+  peerDependencies:
+    react: ^16.0.0-0 || ^17.0.0-0 || ^18.0.0-0
+  checksum: 4774fb8d62f68948e45cb214acf025d4f0be1a4d80be11d7771dcd63f7e054710df2a05bc66c5b0d57bf33755c834f5d6033b11c0a360681ca166e32342292f2
+  languageName: node
+  linkType: hard
+
+"@visx/legend@npm:2.10.0":
+  version: 2.10.0
+  resolution: "@visx/legend@npm:2.10.0"
+  dependencies:
+    "@types/react": "*"
+    "@visx/group": 2.10.0
     "@visx/scale": 2.2.2
     classnames: ^2.3.1
     prop-types: ^15.5.10
   peerDependencies:
-    react: ^16.3.0-0 || ^17.0.0-0
-  checksum: 36073afa3a959146364ac3fd5a51a31fa997e3db8063ececcacfb554a68e53e6f17b8e63ddbfa921ea45efeafa1541623a93f05ee50458edefae2217c42c929d
+    react: ^16.3.0-0 || ^17.0.0-0 || ^18.0.0-0
+  checksum: 720ccdf12e86fe16689a9ad01e5b9490b925cd0be2ed638d37519524d860a9f4972ad43f85e064460cb6bee0d1237254f1671d104d33c0fed125af13c895f2ec
   languageName: node
   linkType: hard
 
@@ -15126,7 +15139,7 @@ __metadata:
     "@math.gl/web-mercator": ^3.5.7
     "@visx/axis": 2.6.0
     "@visx/group": 2.1.0
-    "@visx/legend": 2.2.2
+    "@visx/legend": 2.10.0
     "@visx/responsive": 2.8.0
     "@visx/scale": 2.2.2
     "@visx/shape": 2.4.0
