@@ -23,7 +23,7 @@ export default function GroupBar({
   if (width < 10) return null;
   if (!activities) return null;
   let data = {};
-  const keys = ['Run', 'Hike', 'Ride'];
+  const keys = ['Run'];
   let maxDistance = 0;
   activities.map((a) => {
     const month = a.start_date_local.slice(2, 7);
@@ -31,8 +31,6 @@ export default function GroupBar({
       data[month] = {
         date: month,
         Run: 0,
-        Hike: 0,
-        Ride: 0,
       };
     }
     data[month][a.type] += a.distance;
