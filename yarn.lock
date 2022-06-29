@@ -8810,9 +8810,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-cli@npm:^4.17.0":
-  version: 4.17.0
-  resolution: "gatsby-cli@npm:4.17.0"
+"gatsby-cli@npm:^4.17.1":
+  version: 4.17.1
+  resolution: "gatsby-cli@npm:4.17.1"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/core": ^7.15.5
@@ -8860,7 +8860,7 @@ __metadata:
     yurnalist: ^2.1.0
   bin:
     gatsby: cli.js
-  checksum: 4061f9b5913fcb437fb213f5c2ace71d277daecbb76ab9138db6dc83c0f2a65fd33e94c51361cf7fcad78ea48c5bdb8b55e2348d821a993e408f2f3d4947d3e2
+  checksum: b95332920f8d438ff17aecad8a16963e5b31dcfd8cb46938ebe6b31a6136c59a01ae1ae83ecc25a8db9578e5a20e3ac84f54158f03f3c961182cf49d33fe5e40
   languageName: node
   linkType: hard
 
@@ -8938,7 +8938,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-parcel-config@npm:^0.8.0":
+"gatsby-parcel-config@npm:0.8.0":
   version: 0.8.0
   resolution: "gatsby-parcel-config@npm:0.8.0"
   dependencies:
@@ -9354,9 +9354,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:4.17.0":
-  version: 4.17.0
-  resolution: "gatsby@npm:4.17.0"
+"gatsby@npm:4.17.2":
+  version: 4.17.2
+  resolution: "gatsby@npm:4.17.2"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/core": ^7.15.5
@@ -9436,13 +9436,13 @@ __metadata:
     find-cache-dir: ^3.3.2
     fs-exists-cached: 1.0.0
     fs-extra: ^10.1.0
-    gatsby-cli: ^4.17.0
+    gatsby-cli: ^4.17.1
     gatsby-core-utils: ^3.17.0
     gatsby-graphiql-explorer: ^2.17.0
     gatsby-legacy-polyfills: ^2.17.0
     gatsby-link: ^4.17.0
     gatsby-page-utils: ^2.17.0
-    gatsby-parcel-config: ^0.8.0
+    gatsby-parcel-config: 0.8.0
     gatsby-plugin-page-creator: ^4.17.0
     gatsby-plugin-typescript: ^4.17.0
     gatsby-plugin-utils: ^3.11.0
@@ -9529,7 +9529,7 @@ __metadata:
       optional: true
   bin:
     gatsby: ./cli.js
-  checksum: 8c56df9e0e839415be6b345265c10a4250468c2f893de0b38228a581fc08b2158309871a986e24ae36857058d75dae3458ea3f5cf0662cf9c037a3554a2012d4
+  checksum: e37b998c924b378323ea7759ea0851cd43a894663989c0cb9ec77a0e2aa10f0ace0477d8bd58e5c48b8246c62384a40f3e6fd12c6006bbdefbecd57677e2b1e0
   languageName: node
   linkType: hard
 
@@ -15581,7 +15581,7 @@ __metadata:
     eslint-plugin-prettier: 4.0.0
     eslint-plugin-react: 7.29.4
     eslint-plugin-react-hooks: 4.5.0
-    gatsby: 4.17.0
+    gatsby: 4.17.2
     gatsby-alias-imports: 1.0.6
     gatsby-plugin-react-helmet: 5.17.0
     gatsby-plugin-react-svg: 3.1.0
