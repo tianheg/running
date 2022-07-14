@@ -23,7 +23,7 @@
     "@math.gl/web-mercator": "^3.5.7",
     "@visx/axis": "2.6.0",
     "@visx/group": "2.1.0",
-    "@visx/legend": "2.2.2",
+    "@visx/legend": "2.10.0",
     "@visx/responsive": "2.8.0",
     "@visx/scale": "2.2.2",
     "@visx/shape": "2.4.0",
