@@ -4233,21 +4233,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@visx/axis@npm:2.6.0":
-  version: 2.6.0
-  resolution: "@visx/axis@npm:2.6.0"
+"@visx/axis@npm:2.11.1":
+  version: 2.11.1
+  resolution: "@visx/axis@npm:2.11.1"
   dependencies:
     "@types/react": "*"
-    "@visx/group": 2.1.0
+    "@visx/group": 2.10.0
     "@visx/point": 2.6.0
     "@visx/scale": 2.2.2
-    "@visx/shape": 2.4.0
-    "@visx/text": 2.3.0
+    "@visx/shape": 2.11.1
+    "@visx/text": 2.10.0
     classnames: ^2.3.1
     prop-types: ^15.6.0
   peerDependencies:
-    react: ^16.3.0-0 || ^17.0.0-0
-  checksum: 6e60533fdc50970e5d7024d96e68607740d715d59e190427dc9ddbc7d48ce22b51df025c5649c21daf4fba8c82837fd25150eeada1cfccdc60e753508e7d0853
+    react: ^16.3.0-0 || ^17.0.0-0 || ^18.0.0-0
+  checksum: 2d109513c317b2cea7b5261d01f25790fdf0c6186a10ca5e5fa0be4d6a1a3d13b44577e4c19a1bc43aac9f0d92f3dbf1452a58bd9e59f7b9ecca3dc12a0f1761
   languageName: node
   linkType: hard
 
@@ -4271,6 +4271,19 @@ __metadata:
   peerDependencies:
     react: ^16.0.0-0 || ^17.0.0-0
   checksum: 949567b6de4d3a5c39c24c72bed8b25a153da8d2a2bac776abd248c6f9bae26704be6a6fbf4a03138c0ed482ebcf98c58fb5d1b20fd5e1480e3c81b2e67e9052
+  languageName: node
+  linkType: hard
+
+"@visx/group@npm:2.10.0":
+  version: 2.10.0
+  resolution: "@visx/group@npm:2.10.0"
+  dependencies:
+    "@types/react": "*"
+    classnames: ^2.3.1
+    prop-types: ^15.6.2
+  peerDependencies:
+    react: ^16.0.0-0 || ^17.0.0-0 || ^18.0.0-0
+  checksum: 4774fb8d62f68948e45cb214acf025d4f0be1a4d80be11d7771dcd63f7e054710df2a05bc66c5b0d57bf33755c834f5d6033b11c0a360681ca166e32342292f2
   languageName: node
   linkType: hard
 
@@ -4325,6 +4338,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@visx/shape@npm:2.11.1":
+  version: 2.11.1
+  resolution: "@visx/shape@npm:2.11.1"
+  dependencies:
+    "@types/d3-path": ^1.0.8
+    "@types/d3-shape": ^1.3.1
+    "@types/lodash": ^4.14.172
+    "@types/react": "*"
+    "@visx/curve": 2.1.0
+    "@visx/group": 2.10.0
+    "@visx/scale": 2.2.2
+    classnames: ^2.3.1
+    d3-path: ^1.0.5
+    d3-shape: ^1.2.0
+    lodash: ^4.17.21
+    prop-types: ^15.5.10
+  peerDependencies:
+    react: ^16.3.0-0 || ^17.0.0-0 || ^18.0.0-0
+  checksum: 3ad97badb4376dd143a208ec46a01b55c9b59f50391f5e70efab609000f9333cc27747e1c5f6379aae897febed5dbf8073bbb9d1634ba7863bbb2f8dbca7e17b
+  languageName: node
+  linkType: hard
+
 "@visx/shape@npm:2.4.0":
   version: 2.4.0
   resolution: "@visx/shape@npm:2.4.0"
@@ -4347,9 +4382,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@visx/text@npm:2.3.0":
-  version: 2.3.0
-  resolution: "@visx/text@npm:2.3.0"
+"@visx/text@npm:2.10.0":
+  version: 2.10.0
+  resolution: "@visx/text@npm:2.10.0"
   dependencies:
     "@types/lodash": ^4.14.172
     "@types/react": "*"
@@ -4358,8 +4393,8 @@ __metadata:
     prop-types: ^15.7.2
     reduce-css-calc: ^1.3.0
   peerDependencies:
-    react: ^16.3.0-0 || ^17.0.0-0
-  checksum: 40795e04ce439a76ce285e751943b6e82d23def4916488e2464cd663dc8bf292f3d1d8ec38ce92b6129ece2f626a77a55e4f618d8551c25bbef402b9908a2fb1
+    react: ^16.3.0-0 || ^17.0.0-0 || ^18.0.0-0
+  checksum: 040efd571bb6cc77e68c8fd04635d2b216a744caf7ca6947f589c5bbfb7b9db0b49fa7a8394279a03379f952c57dfba550a6cd3f2acc3017c0850b3215b958df
   languageName: node
   linkType: hard
 
@@ -15566,7 +15601,7 @@ __metadata:
     "@mapbox/mapbox-gl-language": 1.0.0
     "@mapbox/polyline": 1.1.1
     "@math.gl/web-mercator": ^3.5.7
-    "@visx/axis": 2.6.0
+    "@visx/axis": 2.11.1
     "@visx/group": 2.1.0
     "@visx/legend": 2.2.2
     "@visx/responsive": 2.8.0
